@@ -69,6 +69,9 @@ main{
     height: 160px;
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 8px 12px 3px;
+    &:hover{
+        cursor: pointer;
+    }
 }
 .all-boxes{
     display: flex;
