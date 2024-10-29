@@ -1,3 +1,7 @@
+const gitdes = document.getElementById('git-des')
+const linkdes = document.getElementById('link-des')
+const github = document.querySelector('.github')
+const linkedin = document.querySelector('.linkedin')
 const first = document.getElementById('1');
 const second = document.getElementById('2');
 const third = document.getElementById('3');
@@ -15,51 +19,89 @@ const fourteen = document.getElementById('14');
 const fiveteen = document.getElementById('15');
 const sixteen = document.getElementById('16');
 
+
 first.addEventListener('click',()=>{
-    window.location.href = "https://www.electronjs.org/";
+    let url1 = "https://www.electronjs.org/";
+    window.open(url1 , '_blank').focus()
 })
 second.addEventListener('click',()=>{
-    window.location.href = "https://excalidraw.com/";
+    let url2 = "https://excalidraw.com/";
+    window.open(url2 , '_blank').focus()
 })
 third.addEventListener('click',()=>{
-    window.location.href = "https://kaboomjs.com/";
+    let url3 = "https://kaboomjs.com/";
+    window.open(url3 , '_blank').focus()
 })
 four.addEventListener('click',()=>{
-    window.location.href = "https://slowroads.io/";
+    let url4 = "https://slowroads.io/";
+    window.open(url4 , '_blank').focus()
 })
 five.addEventListener('click',()=>{
-    window.location.href = "https://file.pizza/";
+    let url5 = "https://file.pizza/";
+    window.open(url5 , '_blank').focus()
 })
 six.addEventListener('click',()=>{
-    window.location.href = "https://enorme.tv/home";
+    let url6 = "https://enorme.tv/home";
+    window.open(url6 , '_blank').focus()
 })
 seven.addEventListener('click',()=>{
-    window.location.href = "https://fakedetail.com/";
+    let url7 = "https://fakedetail.com/";
+    window.open(url7 , '_blank').focus()
 })
 eight.addEventListener('click',()=>{
-    window.location.href = "https://tinypng.com/";
+    let url8 = "https://tinypng.com/";
+    window.open(url8 , '_blank').focus()
 })
 nine.addEventListener('click',()=>{
-    window.location.href = "https://theresanaiforthat.com/";
+    let url9 = "https://theresanaiforthat.com/";
+    window.open(url9 , '_blank').focus()
 })
 ten.addEventListener('click',()=>{
-    window.location.href = "https://sweatco.in/";
+    let url10 = "https://sweatco.in/";
+    window.open(url10 , '_blank').focus()
 })
 eleven.addEventListener('click',()=>{
-    window.location.href = "https://spline.design/";
+    let url11 = "https://spline.design/";
+    window.open(url11 , '_blank').focus()
 })
 twelve.addEventListener('click',()=>{
-    window.location.href = "https://spotifydown.com/";
+    let url12 = "https://spotifydown.com/";
+    window.open(url12 , '_blank').focus()
 })
 thirteen.addEventListener('click',()=>{
-    window.location.href = "https://saveviddit.com/";
+    let url13 = "https://saveviddit.com/";
+    window.open(url13 , '_blank').focus()
 })
 fourteen.addEventListener('click',()=>{
-    window.location.href = "https://www.shazam.com/";
+    let url14 = "https://www.shazam.com/";
+    window.open(url14 , '_blank').focus()
 })
 fiveteen.addEventListener('click',()=>{
-    window.location.href = "https://downloaderto.com/enO1/youtube-4k-downloader";
+    let url15 = "https://downloaderto.com/enO1/youtube-4k-downloader";
+    window.open(url15 , '_blank').focus()
 })
 sixteen.addEventListener('click',()=>{
-    window.location.href = "https://getintopc.com/";
+    let url16 = "https://getintopc.com/";
+    window.open(url16 , '_blank').focus()    
+})
+
+linkedin.addEventListener('click',()=>{
+    let url18= "https://www.linkedin.com/in/yash-sonii";
+    window.open(url18 , '_blank').focus()
+})
+github.addEventListener('click',()=>{
+    let url19= "https://github.com/ThenameisYashh";
+    window.open(url19 , '_blank').focus()
+})
+github.addEventListener('mouseover',()=>{
+    gitdes.style.display = 'block';
+})
+github.addEventListener('mouseleave',()=>{
+    gitdes.style.display = 'none';
+})
+linkedin.addEventListener('mouseover',()=>{
+    linkdes.style.display = 'block';
+})
+linkedin.addEventListener('mouseleave',()=>{
+    linkdes.style.display = 'none';
 })
