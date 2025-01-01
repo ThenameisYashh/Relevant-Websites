@@ -5,6 +5,7 @@
   margin: 0;
   box-sizing: border-box;
   font-family: Martel Sans;
+  text-decoration: none;
 }
 header {
   width: 100%;
@@ -45,34 +46,24 @@ main {
   background-size: cover;
   padding-bottom: 69px;
 }
-.wrapper {
-  width: 100%;
-  padding: 0 69px;
-}
 .boxes-theme {
-  width: 318px;
-  height: 386px;
-  border-radius: 10px;
-  display: flex;
-  padding-top: 10px;
-  margin: 13px;
-  flex-direction: column;
-  align-items: center;
-  background: rgba(255, 255, 255, 0.25);
+  width: 30%;
+  display: block;
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-  backdrop-filter: blur(4px);
+  backdrop-filter: blur(9px);
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.18);
-  transition: transform 0.4s cubic-bezier(0.22, 0.61, 0.36, 1);
+  transition: transform 0.2s cubic-bezier(0.22, 0.61, 0.36, 1);
+  padding: 10px;
+
   &:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
   }
 }
 .boxes-theme > img {
-  width: 300px;
-  height: 160px;
-  border-radius: 10px;
-  box-shadow: rgba(0, 0, 0, 0.3) 0px 8px 12px 3px;
+  width: 100%;
+  border-radius: 25px;
+
   &:hover {
     cursor: pointer;
   }
@@ -80,24 +71,17 @@ main {
 .all-boxes {
   display: flex;
   flex-wrap: wrap;
+  gap: 25px;
   justify-content: center;
 }
 .des {
-  width: 290px;
-  height: 226px;
-  font-size: small;
-  padding-top: 25px;
-  font-weight: 600;
+  font-size: 0.8rem;
+  color: #000000;
 }
 .more-container {
   display: flex;
   justify-content: center;
   margin-top: 50px;
-  animation-name: scalling;
-  animation-duration: 2s;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
-  animation-direction: alternate;
 }
 @keyframes scalling {
   from {
@@ -112,9 +96,8 @@ main {
   backdrop-filter: blur(10px);
   border-radius: 10px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-  padding: 20px 7px;
-  width: 17%;
-  text-align: center;
+  padding: 20px 13px;
+  animation: scalling 2s infinite linear alternate;
 }
 .text > p {
   font-family: sans-serif;
@@ -210,6 +193,7 @@ main {
   color: #fff;
 }
 #git-des {
+  display: none;
   position: absolute;
   right: 85px;
   top: 185px;
@@ -217,11 +201,13 @@ main {
   width: 113px;
 }
 #link-des {
+  display: none;
   position: absolute;
   right: 85px;
   bottom: 185px;
   z-index: 2;
 }
+
 @keyframes opacity {
   from {
     opacity: 0;
@@ -237,6 +223,16 @@ main {
   .header-txt {
     width: 260px;
     font-size: 20px;
+  }
+  .boxes-theme {
+    width: 45%;
+    box-shadow: 0 8px 20px 0 rgba(31, 38, 135, 0.37);
+    border-radius: 7px;
+    padding: 7px;
+  }
+  .des {
+    font-size: 0.6rem;
+    color: #000000;
   }
   .footer {
     background: radial-gradient(
@@ -255,6 +251,15 @@ main {
   .header-txt {
     width: 200px;
     font-size: 15px;
+  }
+  .des {
+    font-size: 0.5rem;
+    color: #000000;
+  }
+  .boxes-theme {
+    width: 88%;
+    border-radius: 5px;
+    padding: 6px;
   }
   .footer {
     background: radial-gradient(
